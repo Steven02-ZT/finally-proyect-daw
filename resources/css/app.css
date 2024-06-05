@@ -1,0 +1,59 @@
+@import '@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '@fortawesome/fontawesome-free/css/regular.css';
+@import '@fortawesome/fontawesome-free/css/solid.css';
+@import '@fortawesome/fontawesome-free/css/brands.css';
+
+@import url(./home/home.css);
+
+:root{
+    --dark-base: #01030c;
+    --dark-darker: #000208;
+    --blue-base: #0d7c95;
+    --light-base: #e2e8f0;
+    --light-darker: #9d9fa0;
+
+    overflow-x: hidden;
+}
+
+/*backgrounds*/
+.bg-dark-base{
+    background-color: var(--dark-base) !important;
+}
+
+.bg-dark-darker{
+    background-color: var(--dark-darker) !important;
+}
+
+
+.bg-blue-base{
+    background-color: var(--blue-base) !important;
+}
+
+.bg-light-base{
+    background-color: var(--light-base) !important;
+}
+
+.bg-light-darker{
+    background-color: var(--light-darker) !important;
+}
+
+/*text colors*/
+.text-dark-base{
+    color: var(--dark-base) !important;
+}
+
+.text-dark-darker{
+    color: var(--dark-darker) !important;
+}
+
+.text-blue-base{
+    color: var(--blue-base) !important;
+}
+
+.text-light-base{
+    color: var(--light-base) !important;
+}
+
+.text-light-darker{
+    color: var(--light-darker) !important;
+}
