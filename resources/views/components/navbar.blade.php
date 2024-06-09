@@ -11,6 +11,7 @@
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-light" type="submit">Search</button>
     </form>
+    <button type="button" class="btn text-dark-base bg-white rounded-circle p-1" style="height: 24pt; width: 24pt;"><i class="fa-solid fa-user"></i></button>
   </div>
 </nav>
 

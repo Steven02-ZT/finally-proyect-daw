@@ -1,0 +1,19 @@
+/*video viewer*/
+#video-container > *{
+    transition: all 1s ease-in-out;
+}
+
+#video-container:hover #video-viewer {
+    opacity: 0.5;
+}
+
+#video-container:hover #info-viewer {
+    opacity: 1;
+}
+
+#info-viewer {
+    opacity: 0;
+}
+
+
+/*slider*/

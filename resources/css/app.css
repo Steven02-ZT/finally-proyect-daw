@@ -4,6 +4,7 @@
 @import '@fortawesome/fontawesome-free/css/brands.css';
 
 @import url(./home/home.css);
+@import url(./viewer/viewer.css);
 
 :root{
     --dark-base: #01030c;
