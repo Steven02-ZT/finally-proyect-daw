@@ -10,11 +10,19 @@ function DeactivateNav() {
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    const navToggleButton = document.querySelector('#activateNav');
-    navToggleButton.addEventListener('click', ActivateNav);
+    try {
+        const navToggleButton = document.querySelector('#activateNav');
+        navToggleButton.addEventListener('click', ActivateNav);
+    } catch (error) {
+        
+    }
 })
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    const navToggleButton = document.querySelector('#deactivateNav');
-    navToggleButton.addEventListener('click', DeactivateNav);
+    try {
+        const navToggleButton = document.querySelector('#deactivateNav');
+        navToggleButton.addEventListener('click', DeactivateNav);
+    } catch (error) {
+        
+    }
 })
