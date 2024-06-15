@@ -26,3 +26,7 @@ Route::get('/admin/movies', function(){
 Route::get('/admin/gender-classification', function(){
     return view('components/admin.category_gender');
 });
+
+Route::get('/admin/memberships', function(){
+    return view('components/admin.memberships');
+});
