@@ -12,7 +12,7 @@ class Movie extends Model
 
     public function classification()
     {
-        return $this->belongsTo(classification::class);
+        return $this->belongsTo(Classification::class);
     }
 
     public function genders()

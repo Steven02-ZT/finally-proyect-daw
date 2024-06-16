@@ -13,7 +13,7 @@
           <a class="nav-link text-light-base" href="/admin/gender-classification">Géneros-Clasificaciones</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light-base" href="#">Membresias-Beneficios</a>
+          <a class="nav-link text-light-base" href="/admin/memberships">Membresias-Beneficios</a>
         </li>
       </ul>
     </div>
