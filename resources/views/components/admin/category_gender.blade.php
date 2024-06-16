@@ -222,14 +222,6 @@
             document.querySelector("#updateGenderDescription").value = description
         }
 
-        function DeleteClassificationHandler(id) {
-            alert(`deleter classification ${id}`)
-        }
-
-        function DeleteGenderHandler(id) {
-            alert(`deleter gender ${id}`)
-        }
-
         function OpenDescriptionHandler(description) {
             document.querySelector("#descriptionMovieContent").innerHTML = description
         }

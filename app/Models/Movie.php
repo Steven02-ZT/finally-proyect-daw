@@ -8,7 +8,7 @@ class Movie extends Model
 {
     protected $table = 'movies';
 
-    protected $fillable = ['title', 'year', 'description', 'classification_id'];
+    protected $fillable = ['title', 'year', 'description', 'classification_id', 'image_url', 'vide_url'];
 
     public function classification()
     {

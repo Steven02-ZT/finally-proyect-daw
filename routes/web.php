@@ -23,11 +23,10 @@ Route::get('/admin/users', function(){
 });
 
 // movies routes
-Route::get('/admin/movies', function(){
-    return view('components/admin.movies');
-});
-
+Route::get('/admin/movies', [MoviesController::class, 'index'])->name('movies.index');
 Route::post('/admin/movies', [MoviesController::class, 'store'])->name('movies.store');
+Route::put('/admin/movies', [MoviesController::class, 'update'])->name('movies.update');
+Route::delete('/admin/movies', [MoviesController::class, 'destroy'])->name('movies.destroy');
 
 /*gender and classification route*/
 Route::get('/admin/gender-classification', [GenderController::class, 'index'])->name('gender.index');
