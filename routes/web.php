@@ -7,14 +7,12 @@ use App\Http\Controllers\ClassificationController;
 use App\Http\Controllers\BenefitController;
 use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\dashboard;
+use App\Http\Controllers\Viewer;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [dashboard::class, 'index']) -> name('dashboard');
 
-Route::get('/viewer/{id}', function ($id) {
-    return view('components.viewer',['id' => $id]);
-});
+Route::get('/viewer/{id}', [Viewer::class, 'index'])-> name('viewer');
 
 /*admin routes*/
 Route::get('/admin', function(){
