@@ -76,7 +76,8 @@
 
     <div class="modal fade" id="addMoviemodal" tabindex="-1" aria-labelledby="addMoviemodal" aria-hidden="true">
         <div class="modal-dialog">
-            <form class="modal-content">
+            <form class="modal-content" action="{{ route('movies.store') }}" method="POST">
+                @csrf
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-film"></i> Agregar película</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -84,28 +85,37 @@
                 <div class="modal-body">
                     <div>
                         <div class="mb-3">
-                            <label for="tittle" class="form-label">Título</label>
-                            <input type="text" class="form-control" id="tittle" require>
+                            <label for="title" class="form-label">Título</label>
+                            <input type="text" class="form-control" name="title" id="title" require>
                         </div>
                         <div class="mb-3">
                             <label for="classification" class="form-label">Clasificación</label>
-                            <select class="form-select" id="classification" require>
+                            <select class="form-select" id="classification" name="classification" require>
                                 <option value="0">A</option>
                                 <option value="1">B</option>
                                 <option value="2">C</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="year" class="form-label">Año de salida</label>
-                            <input type="date" class="form-control" id="year" require>
+                            <label for="date" class="form-label">Fecha de salida</label>
+                            <input type="date" class="form-control" id="date" name="date" require>
                         </div>
                         <div class="mb-3">
-                            <label for="gender" class="form-label">Género</label>
-                            <select class="form-select" id="gender" require>
-                                <option value="0">Genero 1</option>
-                                <option value="1">Genero 2</option>
-                                <option value="2">Genero 3</option>
-                            </select>
+                            <p>Generos</p>
+                            <div class="d-flex gap-2">
+                               <div>
+                                    <label for="gender1" class="form-label">Genero</label>
+                                    <input type="checkbox" class="" id="gender1" name="gender">
+                                </div>
+                                <div>
+                                    <label for="gender2" class="form-label">Genero</label>
+                                    <input type="checkbox" class="" id="gender2" name="gender">
+                                </div>
+                                <div>
+                                    <label for="gender3" class="form-label">Genero</label>
+                                    <input type="checkbox" class="" id="gender3" name="gender">
+                                </div>
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label">Descripcion</label>
